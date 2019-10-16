@@ -5,7 +5,7 @@ from datetime import datetime as dt
 import sys
 import re
 
-# p.set_options(p.OPT.URL,p.OPT.EMOJI,p.OPT.SMILEY)
+p.set_options(p.OPT.SMILEY)
 
 
 def get_auth(key_path):
@@ -26,8 +26,12 @@ def get_api(auth):
 
 def process(text):
     processed_text = re.subn(r'\s\s+',' ',text)[0]
+    processed_text = re.subn('&amp','and',processed_text)[0]
+    processed_text = re.subn('…','',processed_text)[0]
+    processed_text = processed_text.strip(' :-*^,+|_')
     processed_text = p.clean(processed_text)
-    processed_text = processed_text
+    processed_text += '\n'
+    processed_text = processed_text.encode('utf-8')
     return processed_text
 
 class Listener(tweepy.StreamListener):
@@ -36,24 +40,24 @@ class Listener(tweepy.StreamListener):
         self.output_file = output_file
 
     def on_status(self, status):
-        if not status.retweeted and 'RT @' not in status.text:
+        if not status.retweeted and 'RT @' not in status.text and not status.truncated and len(status.text)>50 and 'automatically checked' not in status.text :
             try:
                 text = status.full_text
             except:
                 text = status.text
             tweet = process(text)
-            print(tweet,status.truncated)
-            print(tweet, file=self.output_file)
+            if len(tweet)>50:
+                self.output_file.write(tweet)
 
 if __name__=='__main__':
     auth = get_auth('../keys/keys.txt')
     api = get_api(auth)
-    output = open('../data/'+dt.now().strftime("%d_%m_%y")+'.txt','w')
+    output = open('../data/'+dt.now().strftime("%d_%m_%y")+'.txt','wb')
     stream = tweepy.Stream(auth=api.auth, listener=Listener(output))
 
     try:
         print('Start streaming... ', end='')
-        stream.sample(languages=['en'])
+        stream.filter(track=['i','you','me','we','our','he','she','why','when','how','who'],languages=['en'])
     except KeyboardInterrupt as e:
         print('Stopped!')
     finally:

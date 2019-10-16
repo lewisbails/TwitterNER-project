@@ -1,0 +1,2091 @@
+#0
+#@SenBobCorker Put on a Helmet, grab a gun...let's see you go to work.
+#0
+#@SenBobCorker Put on a Helmet, grab a gun...let's see you go to work.
+1	@SenBobCorker	B-ORG
+2	Put	O
+3	on	O
+4	a	O
+5	Helmet	B-PRODUCT
+6	,	O
+7	grab	O
+8	a	O
+9	gun	O
+10	...	O
+11	let	O
+12	's	O
+13	see	O
+14	you	O
+15	go	O
+16	to	O
+17	work	O
+18	.	O
+
+#1
+#@MitsurugiTouken Because of the most likely? Seems a bit extreme, but okay. It wasn't a refusal, but I'm not gonna force ya.
+#0
+#@MitsurugiTouken Because of the most likely?
+1	@MitsurugiTouken	O
+2	Because	O
+3	of	O
+4	the	O
+5	most	O
+6	likely	O
+7	?	O
+
+#1
+#Seems a bit extreme, but okay.
+1	Seems	O
+2	a	O
+3	bit	O
+4	extreme	O
+5	,	O
+6	but	O
+7	okay	O
+8	.	O
+
+#2
+#It wasn't a refusal, but I'm not gonna force ya.
+1	It	O
+2	was	O
+3	n't	O
+4	a	O
+5	refusal	O
+6	,	O
+7	but	O
+8	I	O
+9	'm	O
+10	not	O
+11	gon	O
+12	na	O
+13	force	O
+14	ya	O
+15	.	O
+
+#2
+#Looking for #Business #Card #branding #Corporate #identity? (low-cost)👉https://t.co/nN9gTKMTW7
+#0
+#Looking for #Business #Card #branding #Corporate #identity? (low-cost)👉https://t.co/nN9gTKMTW7
+1	Looking	O
+2	for	O
+3	#Business	O
+4	#Card	O
+5	#branding	O
+6	#Corporate	O
+7	#identity?	O
+8	(	O
+9	low-cost)👉https://t.co/nN9gTKMTW7	O
+
+#3
+#@mrjamesob @LBC There's a new tartan in town. Why We Need an Islamic Tartan https://t.co/1ftUE2OqeJ via @HuffPostRelig
+#0
+#@mrjamesob @LBC There's a new tartan in town.
+1	@mrjamesob	O
+2	@LBC	O
+3	There	O
+4	's	O
+5	a	O
+6	new	O
+7	tartan	O
+8	in	O
+9	town	O
+10	.	O
+
+#1
+#Why We Need an Islamic Tartan https://t.co/1ftUE2OqeJ via @HuffPostRelig
+1	Why	O
+2	We	O
+3	Need	O
+4	an	O
+5	Islamic	O
+6	Tartan	O
+7	https://t.co/1ftUE2OqeJ	O
+8	via	O
+9	@HuffPostRelig	B-ORG
+
+#4
+#@JaneMarriottFCO @BBCAfrica @NiNanjira @UKinKenya You should be our new #BrandKenya ambassador. You're doing the most. Kudos!
+#0
+#@JaneMarriottFCO @BBCAfrica @NiNanjira @UKinKenya You should be our new #BrandKenya ambassador.
+1	@JaneMarriottFCO	O
+2	@BBCAfrica	O
+3	@NiNanjira	O
+4	@UKinKenya	O
+5	You	O
+6	should	O
+7	be	O
+8	our	O
+9	new	O
+10	#BrandKenya	O
+11	ambassador	O
+12	.	O
+
+#1
+#You're doing the most.
+1	You	O
+2	're	O
+3	doing	O
+4	the	O
+5	most	O
+6	.	O
+
+#2
+#Kudos!
+1	Kudos	O
+2	!	O
+
+#5
+#@BEAT_TWITTAR I dream of punching the abstract gestalt of youtube itself
+#0
+#@BEAT_TWITTAR I dream of punching the abstract gestalt of youtube itself
+1	@BEAT_TWITTAR	O
+2	I	O
+3	dream	O
+4	of	O
+5	punching	O
+6	the	O
+7	abstract	O
+8	gestalt	O
+9	of	O
+10	youtube	B-ORG
+11	itself	O
+
+#6
+#I cared about other niggas careers instead of my own💯The biggest mistake i ever made💯
+#0
+#I cared about other niggas careers instead of my own💯The biggest mistake i ever made💯
+1	I	O
+2	cared	O
+3	about	O
+4	other	O
+5	niggas	O
+6	careers	O
+7	instead	O
+8	of	O
+9	my	O
+10	own	O
+11	💯	O
+12	The	O
+13	biggest	O
+14	mistake	O
+15	i	O
+16	ever	O
+17	made	O
+18	💯	O
+
+#7
+#@anupkranal Hi, we request you to follow us back so that we can address your concern via DM. We are happy to help. Regards, Team Axis Bank
+#0
+#@anupkranal Hi, we request you to follow us back so that we can address your concern via DM.
+1	@anupkranal	B-ORG
+2	Hi	I-ORG
+3	,	O
+4	we	O
+5	request	O
+6	you	O
+7	to	O
+8	follow	O
+9	us	O
+10	back	O
+11	so	O
+12	that	O
+13	we	O
+14	can	O
+15	address	O
+16	your	O
+17	concern	O
+18	via	O
+19	DM	B-ORG
+20	.	O
+
+#1
+#We are happy to help.
+1	We	O
+2	are	O
+3	happy	O
+4	to	O
+5	help	O
+6	.	O
+
+#2
+#Regards, Team Axis Bank
+1	Regards	O
+2	,	O
+3	Team	B-ORG
+4	Axis	I-ORG
+5	Bank	I-ORG
+
+#8
+#Happy to help! Just point me at the enemy, and I'll curse 'em to gooey bits.
+#0
+#Happy to help!
+1	Happy	O
+2	to	O
+3	help	O
+4	!	O
+
+#1
+#Just point me at the enemy, and I'll curse 'em to gooey bits.
+1	Just	O
+2	point	O
+3	me	O
+4	at	O
+5	the	O
+6	enemy	O
+7	,	O
+8	and	O
+9	I	O
+10	'll	O
+11	curse	O
+12	'em	O
+13	to	O
+14	gooey	O
+15	bits	O
+16	.	O
+
+#9
+#@sandibachom Yeah I'm beginning to think that the hide under the desk thing was more about identity then survival.
+#0
+#@sandibachom Yeah I'm beginning to think that the hide under the desk thing was more about identity then survival.
+1	@sandibachom	B-ORG
+2	Yeah	O
+3	I	O
+4	'm	O
+5	beginning	O
+6	to	O
+7	think	O
+8	that	O
+9	the	O
+10	hide	O
+11	under	O
+12	the	O
+13	desk	O
+14	thing	O
+15	was	O
+16	more	O
+17	about	O
+18	identity	O
+19	then	O
+20	survival	O
+21	.	O
+
+#10
+#I rocked the vote and cast my official #RockHall2020 Fan Vote ballot. https://t.co/xhDuIZDnDi
+#0
+#I rocked the vote and cast my official #RockHall2020 Fan Vote ballot.
+1	I	O
+2	rocked	O
+3	the	O
+4	vote	O
+5	and	O
+6	cast	O
+7	my	O
+8	official	O
+9	#RockHall2020	B-ORG
+10	Fan	I-ORG
+11	Vote	I-ORG
+12	ballot	O
+13	.	O
+
+#1
+#https://t.co/xhDuIZDnDi
+1	https://t.co/xhDuIZDnDi	O
+
+#11
+#@fin_costick Don't see why so many people think this is funny, so many people with bored lives and no brains
+#0
+#@fin_costick Don't see why so many people think this is funny, so many people with bored lives and no brains
+1	@fin_costick	O
+2	Do	O
+3	n't	O
+4	see	O
+5	why	O
+6	so	O
+7	many	O
+8	people	O
+9	think	O
+10	this	O
+11	is	O
+12	funny	O
+13	,	O
+14	so	O
+15	many	O
+16	people	O
+17	with	O
+18	bored	O
+19	lives	O
+20	and	O
+21	no	O
+22	brains	O
+
+#12
+#@mattgrayc64 @PdmonPaul well you can't argue with the actual figures for government spending.
+#0
+#@mattgrayc64 @PdmonPaul well you can't argue with the actual figures for government spending.
+1	@mattgrayc64	O
+2	@PdmonPaul	O
+3	well	O
+4	you	O
+5	ca	O
+6	n't	O
+7	argue	O
+8	with	O
+9	the	O
+10	actual	O
+11	figures	O
+12	for	O
+13	government	O
+14	spending	O
+15	.	O
+
+#13
+#@Robo_Maid “No... It was apposed to be me...” Falling to his knees
+#0
+#@Robo_Maid “No... It was apposed to be me...” Falling to his knees
+1	@Robo_Maid	B-ORG
+2	“	O
+3	No	O
+4	...	O
+5	It	O
+6	was	O
+7	apposed	O
+8	to	O
+9	be	O
+10	me	O
+11	...	O
+12	”	O
+13	Falling	O
+14	to	O
+15	his	O
+16	knees	O
+
+#14
+#@WickedShadowzHP 😂😂😂😂😅 I’m struggling right now https://t.co/4X5N40JaHV
+#0
+#@WickedShadowzHP 😂😂😂😂😅 I’m struggling right now https://t.co/4X5N40JaHV
+1	@WickedShadowzHP	O
+2	😂	O
+3	😂	O
+4	😂	O
+5	😂	O
+6	😅	O
+7	I	O
+8	’m	B-ORG
+9	struggling	O
+10	right	O
+11	now	O
+12	https://t.co/4X5N40JaHV	O
+
+#15
+#di din kame ganon kabait pero we try our best to give u our best attitude. what’s your excuse?🙄
+#0
+#di din kame ganon kabait pero we try our best to give u our best attitude.
+1	di	B-PERSON
+2	din	I-PERSON
+3	kame	I-PERSON
+4	ganon	I-PERSON
+5	kabait	I-PERSON
+6	pero	I-PERSON
+7	we	O
+8	try	O
+9	our	O
+10	best	O
+11	to	O
+12	give	O
+13	u	O
+14	our	O
+15	best	O
+16	attitude	O
+17	.	O
+
+#1
+#what’s your excuse?
+1	what	O
+2	’s	O
+3	your	O
+4	excuse	O
+5	?	O
+
+#2
+#🙄
+1	🙄	O
+
+#16
+#"if the story's over, why am i still writing pages?" is such a beautiful lyric
+#0
+#"if the story's over, why am i still writing pages?"
+1	"	O
+2	if	O
+3	the	O
+4	story	O
+5	's	O
+6	over	O
+7	,	O
+8	why	O
+9	am	O
+10	i	O
+11	still	O
+12	writing	O
+13	pages	O
+14	?	O
+15	"	O
+
+#1
+#is such a beautiful lyric
+1	is	O
+2	such	O
+3	a	O
+4	beautiful	O
+5	lyric	O
+
+#17
+#Emma Douglas owns up to being a #DC triple- defaulter! Wow- makes me feel a whole lot better @LGIM #PLSAannual19 #plsa
+#0
+#Emma Douglas owns up to being a #DC triple- defaulter!
+1	Emma	B-PERSON
+2	Douglas	I-PERSON
+3	owns	O
+4	up	O
+5	to	O
+6	being	O
+7	a	O
+8	#DC	B-CARDINAL
+9	triple-	O
+10	defaulter	O
+11	!	O
+
+#1
+#Wow- makes me feel a whole lot better @LGIM #PLSAannual19 #plsa
+1	Wow-	O
+2	makes	O
+3	me	O
+4	feel	O
+5	a	O
+6	whole	O
+7	lot	O
+8	better	O
+9	@LGIM	O
+10	#PLSAannual19	O
+11	#plsa	O
+
+#18
+#@John_HowardProp Hi John I'd be delighted to have a chat Just planning next year's diary Give me a call or message Andrew
+#0
+#@John_HowardProp Hi John I'd be delighted to have a chat Just planning next year's diary Give me a call or message Andrew
+1	@John_HowardProp	O
+2	Hi	O
+3	John	B-PERSON
+4	I	O
+5	'd	O
+6	be	O
+7	delighted	O
+8	to	O
+9	have	O
+10	a	O
+11	chat	O
+12	Just	O
+13	planning	O
+14	next	B-DATE
+15	year	I-DATE
+16	's	I-DATE
+17	diary	O
+18	Give	O
+19	me	O
+20	a	O
+21	call	O
+22	or	O
+23	message	O
+24	Andrew	B-PERSON
+
+#19
+#@DrLeanaWen @TulsiGabbard I was wondering why you had the falling out with @PPFA. This elains it.
+#0
+#@DrLeanaWen @TulsiGabbard I was wondering why you had the falling out with @PPFA.
+1	@DrLeanaWen	O
+2	@TulsiGabbard	O
+3	I	O
+4	was	O
+5	wondering	O
+6	why	O
+7	you	O
+8	had	O
+9	the	O
+10	falling	O
+11	out	O
+12	with	O
+13	@PPFA	B-ORG
+14	.	O
+
+#1
+#This elains it.
+1	This	O
+2	elains	O
+3	it	O
+4	.	O
+
+#20
+#@bharris989 are .. u.. breaking up with me over twitter??? How millennial of you 😢
+#0
+#@bharris989 are .. u.. breaking up with me over twitter???
+1	@bharris989	O
+2	are	O
+3	..	O
+4	u	O
+5	..	O
+6	breaking	O
+7	up	O
+8	with	O
+9	me	O
+10	over	O
+11	twitter	O
+12	?	O
+13	?	O
+14	?	O
+
+#1
+#How millennial of you 😢
+1	How	O
+2	millennial	O
+3	of	O
+4	you	O
+5	😢	O
+
+#21
+#the kind of relationship where we sit in the same room reading our books. comfortable silence.
+#0
+#the kind of relationship where we sit in the same room reading our books.
+1	the	O
+2	kind	O
+3	of	O
+4	relationship	O
+5	where	O
+6	we	O
+7	sit	O
+8	in	O
+9	the	O
+10	same	O
+11	room	O
+12	reading	O
+13	our	O
+14	books	O
+15	.	O
+
+#1
+#comfortable silence.
+1	comfortable	O
+2	silence	O
+3	.	O
+
+#22
+#Lolol jk jk . i already mess with bro but that made me fw him a lil harder can't lie to ya
+#0
+#Lolol jk jk .
+1	Lolol	B-PERSON
+2	jk	I-PERSON
+3	jk	O
+4	.	O
+
+#1
+#i already mess with bro but that made me fw him a lil harder can't lie to ya
+1	i	O
+2	already	O
+3	mess	O
+4	with	O
+5	bro	O
+6	but	O
+7	that	O
+8	made	O
+9	me	O
+10	fw	O
+11	him	O
+12	a	O
+13	lil	O
+14	harder	O
+15	ca	O
+16	n't	O
+17	lie	O
+18	to	O
+19	ya	O
+
+#23
+#‘You’ll Be Amazed,’ Says Book Review By Japan’s Sankei Shimbun On Marc Morano’s ‘Politically Incorrect Guide’ - https://t.co/Q4SiMaTUaB
+#0
+#‘You’ll Be Amazed,’ Says Book Review By Japan’s Sankei Shimbun On Marc Morano’s ‘Politically Incorrect Guide’ - https://t.co/Q4SiMaTUaB
+1	‘	O
+2	You	O
+3	’ll	O
+4	Be	O
+5	Amazed	O
+6	,	O
+7	’	O
+8	Says	O
+9	Book	O
+10	Review	O
+11	By	O
+12	Japan	B-GPE
+13	’s	O
+14	Sankei	B-PERSON
+15	Shimbun	I-PERSON
+16	On	O
+17	Marc	B-PERSON
+18	Morano	I-PERSON
+19	’s	O
+20	‘	O
+21	Politically	B-WORK_OF_ART
+22	Incorrect	I-WORK_OF_ART
+23	Guide	I-WORK_OF_ART
+24	’	O
+25	-	O
+26	https://t.co/Q4SiMaTUaB	O
+
+#24
+#Andrew Yang 4th Democratic Debate Full Highlights | Every Word He Said https://t.co/ggJIgzTGx0 @AndrewYang #2020Election #YangGang
+#0
+#Andrew Yang 4th Democratic Debate Full Highlights | Every Word He Said https://t.co/ggJIgzTGx0 @AndrewYang #2020Election #YangGang
+1	Andrew	B-PERSON
+2	Yang	I-PERSON
+3	4th	B-ORDINAL
+4	Democratic	B-EVENT
+5	Debate	I-EVENT
+6	Full	I-EVENT
+7	Highlights	I-EVENT
+8	|	I-EVENT
+9	Every	I-EVENT
+10	Word	I-EVENT
+11	He	I-EVENT
+12	Said	I-EVENT
+13	https://t.co/ggJIgzTGx0	O
+14	@AndrewYang	O
+15	#2020Election	O
+16	#YangGang	B-CARDINAL
+
+#25
+#@AbhishBanerj how many armies are placed in Ayodhya? Can u enlighten on this.
+#0
+#@AbhishBanerj how many armies are placed in Ayodhya?
+1	@AbhishBanerj	B-ORG
+2	how	O
+3	many	O
+4	armies	O
+5	are	O
+6	placed	O
+7	in	O
+8	Ayodhya	B-GPE
+9	?	O
+
+#1
+#Can u enlighten on this.
+1	Can	O
+2	u	O
+3	enlighten	O
+4	on	O
+5	this	O
+6	.	O
+
+#26
+#@ZinaSpeaks Where is n0 2 my problem is number 2. I've looked for n0 two from Mile 2 to 12.
+#0
+#@ZinaSpeaks Where is n0 2 my problem is number 2.
+1	@ZinaSpeaks	O
+2	Where	O
+3	is	O
+4	n0	B-PRODUCT
+5	2	I-PRODUCT
+6	my	O
+7	problem	O
+8	is	O
+9	number	O
+10	2	B-CARDINAL
+11	.	O
+
+#1
+#I've looked for n0 two from Mile 2 to 12.
+1	I	O
+2	've	O
+3	looked	O
+4	for	O
+5	n0	O
+6	two	O
+7	from	O
+8	Mile	O
+9	2	B-CARDINAL
+10	to	O
+11	12	B-CARDINAL
+12	.	O
+
+#27
+#When I landed on earth... I need to find my spaceship 🛸
+#0
+#When I landed on earth... I need to find my spaceship 🛸
+1	When	O
+2	I	O
+3	landed	O
+4	on	O
+5	earth	O
+6	...	O
+7	I	O
+8	need	O
+9	to	O
+10	find	O
+11	my	O
+12	spaceship	O
+13	🛸	O
+
+#28
+#@lulo2119 @RepAdamSchiff I hope this is sacarstic 🤡🌎
+#0
+#@lulo2119 @RepAdamSchiff I hope this is sacarstic 🤡🌎
+1	@lulo2119	O
+2	@RepAdamSchiff	O
+3	I	O
+4	hope	O
+5	this	O
+6	is	O
+7	sacarstic	B-PERSON
+8	🤡	I-PERSON
+9	🌎	O
+
+#29
+#@realDonaldTrump If Andrew Yang gets the nomination you are FUCKED, Sir.
+#0
+#@realDonaldTrump If Andrew Yang gets the nomination you are FUCKED, Sir.
+1	@realDonaldTrump	O
+2	If	O
+3	Andrew	B-PERSON
+4	Yang	I-PERSON
+5	gets	O
+6	the	O
+7	nomination	O
+8	you	O
+9	are	O
+10	FUCKED	O
+11	,	O
+12	Sir	O
+13	.	O
+
+#30
+#Standardized testing is complete garbage and as far as I’m concerned the PSAT’s are one of the worst offenders
+#0
+#Standardized testing is complete garbage and as far as I’m concerned the PSAT’s are one of the worst offenders
+1	Standardized	O
+2	testing	O
+3	is	O
+4	complete	O
+5	garbage	O
+6	and	O
+7	as	O
+8	far	O
+9	as	O
+10	I	O
+11	’m	O
+12	concerned	O
+13	the	O
+14	PSAT	O
+15	’s	O
+16	are	O
+17	one	B-CARDINAL
+18	of	O
+19	the	O
+20	worst	O
+21	offenders	O
+
+#31
+##GetWellSoonMingi we love you, retablis toi bien 💕💕
+#0
+##GetWellSoonMingi we love you, retablis toi bien 💕💕
+1	#GetWellSoonMingi	O
+2	we	O
+3	love	O
+4	you	O
+5	,	O
+6	retablis	O
+7	toi	O
+8	bien	O
+9	💕	O
+10	💕	O
+
+#32
+#@jtyler220 She’s the only one that hurts both the dems and trump
+#0
+#@jtyler220 She’s the only one that hurts both the dems and trump
+1	@jtyler220	O
+2	She	O
+3	’s	O
+4	the	O
+5	only	O
+6	one	O
+7	that	O
+8	hurts	O
+9	both	O
+10	the	O
+11	dems	B-NORP
+12	and	O
+13	trump	O
+
+#33
+#Show me a tweet with more retweets than likes. I'll wait. 😊
+#0
+#Show me a tweet with more retweets than likes.
+1	Show	O
+2	me	O
+3	a	O
+4	tweet	O
+5	with	O
+6	more	O
+7	retweets	O
+8	than	O
+9	likes	O
+10	.	O
+
+#1
+#I'll wait.
+1	I	O
+2	'll	O
+3	wait	O
+4	.	O
+
+#2
+#😊
+1	😊	O
+
+#34
+#Lmao I already told my marj that my cousins and uncles can catch these hands. Only ones safe are my aunties.
+#0
+#Lmao I already told my marj that my cousins and uncles can catch these hands.
+1	Lmao	B-PERSON
+2	I	O
+3	already	O
+4	told	O
+5	my	O
+6	marj	B-PERSON
+7	that	O
+8	my	O
+9	cousins	O
+10	and	O
+11	uncles	O
+12	can	O
+13	catch	O
+14	these	O
+15	hands	O
+16	.	O
+
+#1
+#Only ones safe are my aunties.
+1	Only	O
+2	ones	O
+3	safe	O
+4	are	O
+5	my	O
+6	aunties	O
+7	.	O
+
+#35
+#I registered since 2014 I wonder if my details were gone missing that the original is still not out. 🤦🏽‍♂️
+#0
+#I registered since 2014 I wonder if my details were gone missing that the original is still not out.
+1	I	O
+2	registered	O
+3	since	O
+4	2014	B-DATE
+5	I	O
+6	wonder	O
+7	if	O
+8	my	O
+9	details	O
+10	were	O
+11	gone	O
+12	missing	O
+13	that	O
+14	the	O
+15	original	O
+16	is	O
+17	still	O
+18	not	O
+19	out	O
+20	.	O
+
+#1
+#🤦🏽‍♂️
+1	🤦	O
+2	🏽‍	O
+3	♂	O
+4	️	O
+
+#36
+#to the gods above me, bless my soul and the shit ton of papers i have yet to work on
+#0
+#to the gods above me, bless my soul and the shit ton of papers i have yet to work on
+1	to	O
+2	the	O
+3	gods	O
+4	above	O
+5	me	O
+6	,	O
+7	bless	O
+8	my	O
+9	soul	O
+10	and	O
+11	the	O
+12	shit	O
+13	ton	O
+14	of	O
+15	papers	O
+16	i	O
+17	have	O
+18	yet	O
+19	to	O
+20	work	O
+21	on	O
+
+#37
+#Time for all the bulls to switch over to “I’m focusing on the tech, reading books, bettering myself away from the charts for a while”
+#0
+#Time for all the bulls to switch over to “I’m focusing on the tech, reading books, bettering myself away from the charts for a while”
+1	Time	O
+2	for	O
+3	all	O
+4	the	O
+5	bulls	O
+6	to	O
+7	switch	O
+8	over	O
+9	to	O
+10	“	O
+11	I	O
+12	’m	O
+13	focusing	O
+14	on	O
+15	the	O
+16	tech	O
+17	,	O
+18	reading	O
+19	books	O
+20	,	O
+21	bettering	O
+22	myself	O
+23	away	O
+24	from	O
+25	the	O
+26	charts	O
+27	for	O
+28	a	O
+29	while	O
+30	”	O
+
+#38
+#The Heavens opened up, and we lost power https://t.co/ZuI4xHnK7H
+#0
+#The Heavens opened up, and we lost power https://t.co/ZuI4xHnK7H
+1	The	O
+2	Heavens	B-ORG
+3	opened	O
+4	up	O
+5	,	O
+6	and	O
+7	we	O
+8	lost	O
+9	power	O
+10	https://t.co/ZuI4xHnK7H	O
+
+#39
+#@TomiLahren Terri, clearly you have a bias against those who speak in complete sentences. #MAGA
+#0
+#@TomiLahren Terri, clearly you have a bias against those who speak in complete sentences.
+1	@TomiLahren	B-PERSON
+2	Terri	I-PERSON
+3	,	O
+4	clearly	O
+5	you	O
+6	have	O
+7	a	O
+8	bias	O
+9	against	O
+10	those	O
+11	who	O
+12	speak	O
+13	in	O
+14	complete	O
+15	sentences	O
+16	.	O
+
+#1
+##MAGA
+1	#MAGA	O
+
+#40
+#If I will be able to get ChikageSSR, I finish to talke in English.
+#0
+#If I will be able to get ChikageSSR, I finish to talke in English.
+1	If	O
+2	I	O
+3	will	O
+4	be	O
+5	able	O
+6	to	O
+7	get	O
+8	ChikageSSR	O
+9	,	O
+10	I	O
+11	finish	O
+12	to	O
+13	talke	O
+14	in	O
+15	English	B-LANGUAGE
+16	.	O
+
+#41
+#He who knows how to washes his hand, I will dine with the elders.. #OwoArugbo
+#0
+#He who knows how to washes his hand, I will dine with the elders.. #OwoArugbo
+1	He	O
+2	who	O
+3	knows	O
+4	how	O
+5	to	O
+6	washes	O
+7	his	O
+8	hand	O
+9	,	O
+10	I	O
+11	will	O
+12	dine	O
+13	with	O
+14	the	O
+15	elders	O
+16	..	O
+17	#OwoArugbo	O
+
+#42
+#I said this same thing yesterday 😅well the "same girl"part, but it was @mdai__ idea
+#0
+#I said this same thing yesterday 😅well the "same girl"part, but it was @mdai__ idea
+1	I	O
+2	said	O
+3	this	O
+4	same	O
+5	thing	O
+6	yesterday	B-DATE
+7	😅	B-PERSON
+8	well	O
+9	the	O
+10	"	O
+11	same	O
+12	girl"part	B-ORG
+13	,	O
+14	but	O
+15	it	O
+16	was	O
+17	@mdai	B-ORG
+18	_	O
+19	_	O
+20	idea	O
+
+#43
+#@toshanshuinLA And now i heard BushiRoad trying to buy Stardom 😑😑
+#0
+#@toshanshuinLA And now i heard BushiRoad trying to buy Stardom 😑😑
+1	@toshanshuinLA	O
+2	And	O
+3	now	O
+4	i	O
+5	heard	O
+6	BushiRoad	B-ORG
+7	trying	O
+8	to	O
+9	buy	O
+10	Stardom	B-ORG
+11	😑	O
+12	😑	O
+
+#44
+#@RAHeight Enjoy, my friend!!! You will be missed at the Baltimore Comic Con! 😊
+#0
+#@RAHeight Enjoy, my friend!!!
+1	@RAHeight	O
+2	Enjoy	O
+3	,	O
+4	my	O
+5	friend	O
+6	!	O
+7	!	O
+8	!	O
+
+#1
+#You will be missed at the Baltimore Comic Con!
+1	You	O
+2	will	O
+3	be	O
+4	missed	O
+5	at	O
+6	the	B-EVENT
+7	Baltimore	I-EVENT
+8	Comic	I-EVENT
+9	Con	I-EVENT
+10	!	O
+
+#2
+#😊
+1	😊	O
+
+#45
+#Your time is precious. Do not waste it on anyone who doesn't realize that you are, too.
+#0
+#Your time is precious.
+1	Your	O
+2	time	O
+3	is	O
+4	precious	O
+5	.	O
+
+#1
+#Do not waste it on anyone who doesn't realize that you are, too.
+1	Do	O
+2	not	O
+3	waste	O
+4	it	O
+5	on	O
+6	anyone	O
+7	who	O
+8	does	O
+9	n't	O
+10	realize	O
+11	that	O
+12	you	O
+13	are	O
+14	,	O
+15	too	O
+16	.	O
+
+#46
+#@asoftbird Tbh I see a lot of well drawn ducks on their
+#0
+#@asoftbird Tbh I see a lot of well drawn ducks on their
+1	@asoftbird	B-PERSON
+2	Tbh	I-PERSON
+3	I	O
+4	see	O
+5	a	O
+6	lot	O
+7	of	O
+8	well	O
+9	drawn	O
+10	ducks	O
+11	on	O
+12	their	O
+
+#47
+#I am eating a delicious chocolate chip cookie and I feel like Miranda when she gobbled up the I Love You cookie from Robert
+#0
+#I am eating a delicious chocolate chip cookie and I feel like Miranda when she gobbled up the I Love You cookie from Robert
+1	I	O
+2	am	O
+3	eating	O
+4	a	O
+5	delicious	O
+6	chocolate	O
+7	chip	O
+8	cookie	O
+9	and	O
+10	I	O
+11	feel	O
+12	like	O
+13	Miranda	B-PERSON
+14	when	O
+15	she	O
+16	gobbled	O
+17	up	O
+18	the	O
+19	I	O
+20	Love	O
+21	You	O
+22	cookie	O
+23	from	O
+24	Robert	B-PERSON
+
+#48
+#@SwiftlySalad i’m so sorry for your loss, i’m always here if you need someone to talk to love 💓
+#0
+#@SwiftlySalad i’m so sorry for your loss, i’m always here if you need someone to talk to love 💓
+1	@SwiftlySalad	O
+2	i	O
+3	’m	O
+4	so	O
+5	sorry	O
+6	for	O
+7	your	O
+8	loss	O
+9	,	O
+10	i	O
+11	’m	O
+12	always	O
+13	here	O
+14	if	O
+15	you	O
+16	need	O
+17	someone	O
+18	to	O
+19	talk	O
+20	to	O
+21	love	O
+22	💓	O
+
+#49
+#@DrAdrianHeald @Tones46992228 @lordofintent He'll have left us to it before then, he's hoping Trump will let him be his adopted son.
+#0
+#@DrAdrianHeald @Tones46992228 @lordofintent He'll have left us to it before then, he's hoping Trump will let him be his adopted son.
+1	@DrAdrianHeald	O
+2	@Tones46992228	O
+3	@lordofintent	O
+4	He	O
+5	'll	O
+6	have	O
+7	left	O
+8	us	O
+9	to	O
+10	it	O
+11	before	O
+12	then	O
+13	,	O
+14	he	O
+15	's	O
+16	hoping	O
+17	Trump	B-ORG
+18	will	O
+19	let	O
+20	him	O
+21	be	O
+22	his	O
+23	adopted	O
+24	son	O
+25	.	O
+
+#50
+#@StackhouseJuli1 Learn about how it might effect hero work.
+#0
+#@StackhouseJuli1 Learn about how it might effect hero work.
+1	@StackhouseJuli1	O
+2	Learn	O
+3	about	O
+4	how	O
+5	it	O
+6	might	O
+7	effect	O
+8	hero	O
+9	work	O
+10	.	O
+
+#51
+#I'm at P.S. Gourmet Coffee in Boston, MA https://t.co/4vXkMEekKQ
+#0
+#I'm at P.S. Gourmet Coffee in Boston, MA https://t.co/4vXkMEekKQ
+1	I	O
+2	'm	O
+3	at	O
+4	P.S.	B-ORG
+5	Gourmet	I-ORG
+6	Coffee	I-ORG
+7	in	O
+8	Boston	B-GPE
+9	,	O
+10	MA	O
+11	https://t.co/4vXkMEekKQ	O
+
+#52
+#@krumple17 I don't know who declared it mushroom day, but I approve.
+#0
+#@krumple17 I don't know who declared it mushroom day, but I approve.
+1	@krumple17	O
+2	I	O
+3	do	O
+4	n't	O
+5	know	O
+6	who	O
+7	declared	O
+8	it	O
+9	mushroom	O
+10	day	B-DATE
+11	,	O
+12	but	O
+13	I	O
+14	approve	O
+15	.	O
+
+#53
+#@MusicForLife61 @SamChu67064286 Good morning Jeff ! Thank you ! Happy Wednesday my friend ! 🎶🎸🎼
+#0
+#@MusicForLife61 @SamChu67064286 Good morning Jeff !
+1	@MusicForLife61	O
+2	@SamChu67064286	O
+3	Good	O
+4	morning	O
+5	Jeff	B-PERSON
+6	!	O
+
+#1
+#Thank you !
+1	Thank	O
+2	you	O
+3	!	O
+
+#2
+#Happy Wednesday my friend !
+1	Happy	O
+2	Wednesday	B-DATE
+3	my	O
+4	friend	O
+5	!	O
+
+#3
+#🎶🎸🎼
+1	🎶	B-PERSON
+2	🎸	I-PERSON
+3	🎼	O
+
+#54
+#Blessings, as you grind today! https://t.co/JiG49ioIdp
+#0
+#Blessings, as you grind today!
+1	Blessings	O
+2	,	O
+3	as	O
+4	you	O
+5	grind	O
+6	today	B-DATE
+7	!	O
+
+#1
+#https://t.co/JiG49ioIdp
+1	https://t.co/JiG49ioIdp	O
+
+#55
+#Today, you’re more beautiful than yesterday and more meaningful than tomorrow. You are my precious present.
+#0
+#Today, you’re more beautiful than yesterday and more meaningful than tomorrow.
+1	Today	B-DATE
+2	,	O
+3	you	O
+4	’re	O
+5	more	O
+6	beautiful	O
+7	than	O
+8	yesterday	B-DATE
+9	and	O
+10	more	O
+11	meaningful	O
+12	than	O
+13	tomorrow	B-DATE
+14	.	O
+
+#1
+#You are my precious present.
+1	You	O
+2	are	O
+3	my	O
+4	precious	O
+5	present	O
+6	.	O
+
+#56
+#@tomatothepotato Are you applying to time travel back to the 1800s or what
+#0
+#@tomatothepotato Are you applying to time travel back to the 1800s or what
+1	@tomatothepotato	O
+2	Are	O
+3	you	O
+4	applying	O
+5	to	O
+6	time	O
+7	travel	O
+8	back	O
+9	to	O
+10	the	O
+11	1800s	O
+12	or	O
+13	what	O
+
+#57
+#Nice job on the website. You are rocking it! @jbrumos7 @NCState_PMB
+#0
+#Nice job on the website.
+1	Nice	O
+2	job	O
+3	on	O
+4	the	O
+5	website	O
+6	.	O
+
+#1
+#You are rocking it!
+1	You	O
+2	are	O
+3	rocking	O
+4	it	O
+5	!	O
+
+#2
+#@jbrumos7 @NCState_PMB
+1	@jbrumos7	O
+2	@NCState_PMB	O
+
+#58
+#@MissWendyWood @NahuiOlin_lMdS You have been duped, the women's toilet is behind the photographer.
+#0
+#@MissWendyWood @NahuiOlin_lMdS You have been duped, the women's toilet is behind the photographer.
+1	@MissWendyWood	O
+2	@NahuiOlin_lMdS	O
+3	You	O
+4	have	O
+5	been	O
+6	duped	O
+7	,	O
+8	the	O
+9	women	O
+10	's	O
+11	toilet	O
+12	is	O
+13	behind	O
+14	the	O
+15	photographer	O
+16	.	O
+
+#59
+#@MorningMashUp @Louis_Tomlinson please pick me i will sell my SOUL
+#0
+#@MorningMashUp @Louis_Tomlinson please pick me i will sell my SOUL
+1	@MorningMashUp	O
+2	@Louis_Tomlinson	O
+3	please	O
+4	pick	O
+5	me	O
+6	i	O
+7	will	O
+8	sell	O
+9	my	O
+10	SOUL	O
+
+#60
+#this podcast is so releaxing hello i love listening to liam talk
+#0
+#this podcast is so releaxing hello i love listening to liam talk
+1	this	O
+2	podcast	O
+3	is	O
+4	so	O
+5	releaxing	O
+6	hello	O
+7	i	O
+8	love	O
+9	listening	O
+10	to	O
+11	liam	B-PERSON
+12	talk	O
+
+#61
+#Better not he is the only reason I put ITV ang GMB on
+#0
+#Better not he is the only reason I put ITV ang GMB on
+1	Better	O
+2	not	O
+3	he	O
+4	is	O
+5	the	O
+6	only	O
+7	reason	O
+8	I	O
+9	put	O
+10	ITV	B-ORG
+11	ang	O
+12	GMB	O
+13	on	O
+
+#62
+#What if tomorrow, you'll hear no more about me. Will you ever wonder where I would be? Will you ever ask if I was doing okay? Will you care?
+#0
+#What if tomorrow, you'll hear no more about me.
+1	What	O
+2	if	O
+3	tomorrow	B-DATE
+4	,	O
+5	you	O
+6	'll	O
+7	hear	O
+8	no	O
+9	more	O
+10	about	O
+11	me	O
+12	.	O
+
+#1
+#Will you ever wonder where I would be?
+1	Will	O
+2	you	O
+3	ever	O
+4	wonder	O
+5	where	O
+6	I	O
+7	would	O
+8	be	O
+9	?	O
+
+#2
+#Will you ever ask if I was doing okay?
+1	Will	O
+2	you	O
+3	ever	O
+4	ask	O
+5	if	O
+6	I	O
+7	was	O
+8	doing	O
+9	okay	O
+10	?	O
+
+#3
+#Will you care?
+1	Will	O
+2	you	O
+3	care	O
+4	?	O
+
+#63
+#@lexcr14 nothing, these were lyrics from songs from an Album I posted about yesterday
+#0
+#@lexcr14 nothing, these were lyrics from songs from an Album I posted about yesterday
+1	@lexcr14	B-ORG
+2	nothing	O
+3	,	O
+4	these	O
+5	were	O
+6	lyrics	O
+7	from	O
+8	songs	O
+9	from	O
+10	an	O
+11	Album	O
+12	I	O
+13	posted	O
+14	about	B-DATE
+15	yesterday	I-DATE
+
+#64
+#Good thing we signed him up to a fresh new 3 year contract
+#0
+#Good thing we signed him up to a fresh new 3 year contract
+1	Good	O
+2	thing	O
+3	we	O
+4	signed	O
+5	him	O
+6	up	O
+7	to	O
+8	a	O
+9	fresh	O
+10	new	O
+11	3	B-DATE
+12	year	I-DATE
+13	contract	O
+
+#65
+#@gtconway3d @TheDemCoalition George we know you are going to write a book with Kellyanne and go back to your conservative views whatever
+#0
+#@gtconway3d @TheDemCoalition George we know you are going to write a book with Kellyanne and go back to your conservative views whatever
+1	@gtconway3d	B-PERSON
+2	@TheDemCoalition	I-PERSON
+3	George	I-PERSON
+4	we	O
+5	know	O
+6	you	O
+7	are	O
+8	going	O
+9	to	O
+10	write	O
+11	a	O
+12	book	O
+13	with	O
+14	Kellyanne	B-PERSON
+15	and	O
+16	go	O
+17	back	O
+18	to	O
+19	your	O
+20	conservative	O
+21	views	O
+22	whatever	O
+
+#66
+#@Labilechester @EmersonEdition @AFCSamueI But he doesn’t play for your teams^^^so pls ex
+#0
+#@Labilechester @EmersonEdition @AFCSamueI But he doesn’t play for your teams^^^so pls ex
+1	@Labilechester	O
+2	@EmersonEdition	O
+3	@AFCSamueI	O
+4	But	O
+5	he	O
+6	does	O
+7	n’t	O
+8	play	O
+9	for	O
+10	your	O
+11	teams^^^so	O
+12	pls	O
+13	ex	O
+
+#67
+#// me while watching #MV_DoYouFHEROxBamBam and be a proud mommy Good song #DoYouFHEROxBamBam https://t.co/r9yIGOzc7O
+#0
+#// me while watching #MV_DoYouFHEROxBamBam and be a proud mommy Good song #DoYouFHEROxBamBam https://t.co/r9yIGOzc7O
+1	//	O
+2	me	O
+3	while	O
+4	watching	O
+5	#MV_DoYouFHEROxBamBam	O
+6	and	O
+7	be	O
+8	a	O
+9	proud	O
+10	mommy	O
+11	Good	O
+12	song	O
+13	#DoYouFHEROxBamBam	O
+14	https://t.co/r9yIGOzc7O	O
+
+#68
+#@bamsars I'm kinky but that ain't one of them sksmjd
+#0
+#@bamsars I'm kinky but that ain't one of them sksmjd
+1	@bamsars	O
+2	I	O
+3	'm	O
+4	kinky	O
+5	but	O
+6	that	O
+7	ai	O
+8	n't	O
+9	one	O
+10	of	O
+11	them	O
+12	sksmjd	O
+
+#69
+#I keep injuring my right foot hope u can still walk tom
+#0
+#I keep injuring my right foot hope u can still walk tom
+1	I	O
+2	keep	O
+3	injuring	O
+4	my	O
+5	right	O
+6	foot	O
+7	hope	O
+8	u	O
+9	can	O
+10	still	O
+11	walk	O
+12	tom	O
+
+#70
+#@weeaboowoman Oh, she'll be around in some way or form
+#0
+#@weeaboowoman Oh, she'll be around in some way or form
+1	@weeaboowoman	O
+2	Oh	O
+3	,	O
+4	she	O
+5	'll	O
+6	be	O
+7	around	O
+8	in	O
+9	some	O
+10	way	O
+11	or	O
+12	form	O
+
+#71
+#These folks need to hurry and; give me these withdrawal papers
+#0
+#These folks need to hurry and; give me these withdrawal papers
+1	These	O
+2	folks	O
+3	need	O
+4	to	O
+5	hurry	O
+6	and	O
+7	;	O
+8	give	O
+9	me	O
+10	these	O
+11	withdrawal	O
+12	papers	O
+
+#72
+#@TheAaronAlasa Nations league is considered major international trophy?? Since when 😂😂
+#0
+#@TheAaronAlasa Nations league is considered major international trophy??
+1	@TheAaronAlasa	O
+2	Nations	O
+3	league	O
+4	is	O
+5	considered	O
+6	major	O
+7	international	O
+8	trophy	O
+9	?	O
+10	?	O
+
+#1
+#Since when 😂😂
+1	Since	O
+2	when	O
+3	😂	B-PERSON
+4	😂	I-PERSON
+
+#73
+#@Luntian27 Nice! What brought you there instead of PH?
+#0
+#@Luntian27 Nice!
+1	@Luntian27	O
+2	Nice	O
+3	!	O
+
+#1
+#What brought you there instead of PH?
+1	What	O
+2	brought	O
+3	you	O
+4	there	O
+5	instead	O
+6	of	O
+7	PH	O
+8	?	O
+
+#74
+#@sisi_alagboeko It's nt really like she wants to go back oo... bt d magic stick..
+#0
+#@sisi_alagboeko It's nt really like she wants to go back oo... bt d magic stick..
+1	@sisi_alagboeko	O
+2	It	O
+3	's	O
+4	nt	O
+5	really	O
+6	like	O
+7	she	O
+8	wants	O
+9	to	O
+10	go	O
+11	back	O
+12	oo	O
+13	...	O
+14	bt	O
+15	d	O
+16	magic	O
+17	stick	O
+18	..	O
+
+#75
+#@benshapiro No one with any sense knows who you are...
+#0
+#@benshapiro No one with any sense knows who you are...
+1	@benshapiro	O
+2	No	O
+3	one	O
+4	with	O
+5	any	O
+6	sense	O
+7	knows	O
+8	who	O
+9	you	O
+10	are	O
+11	...	O
+
+#76
+#@ummimardhiah_ @sykopa1h @ttaranghaeki See you in the near future!
+#0
+#@ummimardhiah_ @sykopa1h @ttaranghaeki See you in the near future!
+1	@ummimardhiah	B-ORG
+2	_	I-ORG
+3	@sykopa1h	I-ORG
+4	@ttaranghaeki	I-ORG
+5	See	I-ORG
+6	you	O
+7	in	O
+8	the	O
+9	near	O
+10	future	O
+11	!	O
+
+#77
+#Hi, She is Hwang Hyunjin’s soulmate @yellr0ses https://t.co/pxFECIxYi8
+#0
+#Hi, She is Hwang Hyunjin’s soulmate @yellr0ses https://t.co/pxFECIxYi8
+1	Hi	O
+2	,	O
+3	She	O
+4	is	O
+5	Hwang	B-PERSON
+6	Hyunjin	I-PERSON
+7	’s	I-PERSON
+8	soulmate	O
+9	@yellr0ses	O
+10	https://t.co/pxFECIxYi8	O
+
+#78
+#@Toucherandrich This picture always scares me. Like he's Bruce Banner.
+#0
+#@Toucherandrich This picture always scares me.
+1	@Toucherandrich	O
+2	This	O
+3	picture	O
+4	always	O
+5	scares	O
+6	me	O
+7	.	O
+
+#1
+#Like he's Bruce Banner.
+1	Like	O
+2	he	O
+3	's	O
+4	Bruce	B-PERSON
+5	Banner	I-PERSON
+6	.	O
+
+#79
+#@sadsnaqvi Funny......but sick. That's all we can think of our PM and a princess?
+#0
+#@sadsnaqvi Funny......but sick.
+1	@sadsnaqvi	B-ORG
+2	Funny	O
+3	......	O
+4	but	O
+5	sick	O
+6	.	O
+
+#1
+#That's all we can think of our PM and a princess?
+1	That	O
+2	's	O
+3	all	O
+4	we	O
+5	can	O
+6	think	O
+7	of	O
+8	our	B-TIME
+9	PM	I-TIME
+10	and	O
+11	a	O
+12	princess	O
+13	?	O
+
+#80
+#Stop lying, Esther got endorsement from Payporte. #BBNaija
+#0
+#Stop lying, Esther got endorsement from Payporte.
+1	Stop	O
+2	lying	O
+3	,	O
+4	Esther	B-PERSON
+5	got	O
+6	endorsement	O
+7	from	O
+8	Payporte	B-PERSON
+9	.	O
+
+#1
+##BBNaija
+1	#BBNaija	O
+
+#81
+#@CNN Klobuchar was the only one who spoke w sanity. Warren is a little trump. She’s not rational. No sane details.
+#0
+#@CNN Klobuchar was the only one who spoke w sanity.
+1	@CNN	O
+2	Klobuchar	B-PERSON
+3	was	O
+4	the	O
+5	only	O
+6	one	O
+7	who	O
+8	spoke	O
+9	w	O
+10	sanity	O
+11	.	O
+
+#1
+#Warren is a little trump.
+1	Warren	B-PERSON
+2	is	O
+3	a	O
+4	little	O
+5	trump	O
+6	.	O
+
+#2
+#She’s not rational.
+1	She	O
+2	’s	O
+3	not	O
+4	rational	O
+5	.	O
+
+#3
+#No sane details.
+1	No	O
+2	sane	O
+3	details	O
+4	.	O
+
+#82
+#@realDonaldTrump Watch out cheeto....they predicted you dead in a new episode. LOLOL #NotMyPresident
+#0
+#@realDonaldTrump Watch out cheeto....they predicted you dead in a new episode.
+1	@realDonaldTrump	O
+2	Watch	O
+3	out	O
+4	cheeto	O
+5	....	O
+6	they	O
+7	predicted	O
+8	you	O
+9	dead	O
+10	in	O
+11	a	O
+12	new	O
+13	episode	O
+14	.	O
+
+#1
+#LOLOL #NotMyPresident
+1	LOLOL	O
+2	#NotMyPresident	O
+
+#83
+#@CarboV @choah_ssi @LBardugo @oOTsukiOo And what are cosplayers who like the characters supposed to do with that information? 8D
+#0
+#@CarboV @choah_ssi @LBardugo @oOTsukiOo And what are cosplayers who like the characters supposed to do with that information?
+1	@CarboV	O
+2	@choah_ssi	O
+3	@LBardugo	O
+4	@oOTsukiOo	O
+5	And	O
+6	what	O
+7	are	O
+8	cosplayers	O
+9	who	O
+10	like	O
+11	the	O
+12	characters	O
+13	supposed	O
+14	to	O
+15	do	O
+16	with	O
+17	that	O
+18	information	O
+19	?	O
+
+#1
+#8D
+1	8D	B-CARDINAL
+
+#84
+#@somitapal Ok.. btw I regularly follow ur tweets now officially following u on twitter.👍
+#0
+#@somitapal Ok.. btw I regularly follow ur tweets now officially following u on twitter.
+1	@somitapal	O
+2	Ok	O
+3	..	O
+4	btw	O
+5	I	O
+6	regularly	O
+7	follow	O
+8	ur	O
+9	tweets	O
+10	now	O
+11	officially	O
+12	following	O
+13	u	O
+14	on	O
+15	twitter	O
+16	.	O
+
+#1
+#👍
+1	👍	O
+
+#85
+#@SmithAangdu Nlc: in April when 30k minimum wage was approved. Nlc: presently still going for meeting on negotiation. 😂
+#0
+#@SmithAangdu Nlc: in April when 30k minimum wage was approved.
+1	@SmithAangdu	O
+2	Nlc	O
+3	:	O
+4	in	O
+5	April	B-DATE
+6	when	O
+7	30k	B-CARDINAL
+8	minimum	O
+9	wage	O
+10	was	O
+11	approved	O
+12	.	O
+
+#1
+#Nlc: presently still going for meeting on negotiation.
+1	Nlc	B-PERSON
+2	:	O
+3	presently	O
+4	still	O
+5	going	O
+6	for	O
+7	meeting	O
+8	on	O
+9	negotiation	O
+10	.	O
+
+#2
+#😂
+1	😂	O
+
+#86
+#@kimbrosflavor its not true i just know its not trueeeeeee
+#0
+#@kimbrosflavor its not true i just know its not trueeeeeee
+1	@kimbrosflavor	O
+2	its	O
+3	not	O
+4	true	O
+5	i	O
+6	just	O
+7	know	O
+8	its	O
+9	not	O
+10	trueeeeeee	O
+
+#87
+#@realDonaldTrump Nah... you are a corrupt lying piece of trash. I’d vote for a stop sign over you
+#0
+#@realDonaldTrump Nah... you are a corrupt lying piece of trash.
+1	@realDonaldTrump	O
+2	Nah	B-PERSON
+3	...	O
+4	you	O
+5	are	O
+6	a	O
+7	corrupt	O
+8	lying	O
+9	piece	O
+10	of	O
+11	trash	O
+12	.	O
+
+#1
+#I’d vote for a stop sign over you
+1	I	O
+2	’d	O
+3	vote	O
+4	for	O
+5	a	O
+6	stop	O
+7	sign	O
+8	over	O
+9	you	O
+
