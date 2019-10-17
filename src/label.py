@@ -17,34 +17,25 @@ def tag(token):
 
     if token.ent_type_ and token.ent_type_ in entities and not token.text.startswith('@'):
         return token.ent_iob_+'-'+token.ent_type_
-    elif token.text.startswith('@'):
-        return 'B-HANDLE'
     else:
         return 'O'
 
 def label(texts):
     tweets = pd.DataFrame(columns=['tweet'])
 
-    # load model and add hashtag/hypen regex patterns
+    # load model and add hypen regex patterns
     nlp = spacy.load('en_core_web_md')
-    nlp.add_pipe(nlp.create_pipe('sentencizer'), before='parser')
+    # nlp.add_pipe(nlp.create_pipe('sentencizer'), before='parser')
     re_token_match = _get_regex_pattern(nlp.Defaults.token_match)
-    # re_token_match = f"({re_token_match}|#\w+|\w+-\w+)"
+    # re_token_match = f"({re_token_match}|#\w+|\w+-\w+)" #hashtag too?
     re_token_match = f"({re_token_match}|\w+-\w+)"
     nlp.tokenizer.token_match = re.compile(re_token_match).match
 
-    
-
     docs = nlp.pipe(texts,disable=['tagger','textcat'])
-    for i,doc in enumerate(docs):
-        tweet_header = f'#{i}\n#{doc.text}\n'
-        sentences = []
-        for j,sent in enumerate(doc.sents):
-            sentence_header = f'#{j}\n#{sent.text}\n'
-            sentence_string = '\n'.join([f'{token.text}\t{tag(token)}' for token in sent])
-            sentences.append(sentence_header+sentence_string)
-        tweet = '\n\n'.join(sentences)
-        tweets = tweets.append({'tweet':tweet_header+tweet+'\n'},ignore_index=True)
+    for i,tweet in enumerate(docs):
+        tweet_header = f'#{i}\n#{tweet.text}\n'
+        tweet_string = '\n'.join([f'{token.text}\t{tag(token)}' for token in tweet])
+        tweets = tweets.append({'tweet':tweet_header+tweet_string+'\n'},ignore_index=True)
 
     return tweets,nlp.pipe(texts,disable=['tagger','textcat'])
 

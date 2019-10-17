@@ -5,8 +5,10 @@ from datetime import datetime as dt
 import sys
 import re
 import time
+import os
+from io import BufferedWriter
 
-p.set_options(p.OPT.SMILEY)
+p.set_options(p.OPT.SMILEY,p.OPT.MENTION,p.OPT.URL)
 
 
 def get_auth(key_path):
@@ -26,25 +28,39 @@ def get_api(auth):
     return api
 
 def process(text):
-    processed_text = re.subn(r'\s\s+',' ',text)[0]
-    processed_text = re.subn('&amp','and',processed_text)[0]
-    processed_text = re.subn('…','',processed_text)[0]
-    processed_text = processed_text.strip(' :-*^,+|_')
+    processed_text = text.replace("&amp;", "and").replace("&gt;", ">").replace("&lt;", "<").replace('…','').strip(' :-*^,+|_')
+    
+    # we currently remove the mention but we could also swap it out for a common handle
+    # mentionFinder = re.compile(r"@\w{1,15}", re.IGNORECASE)
+    # processed_text = mentionFinder.subn("@mention", processed_text)[0]
+
+    processed_text = re.subn(r'\s\s+',' ',processed_text)[0]
     processed_text = p.clean(processed_text)
     processed_text += '\n'
     processed_text = processed_text.encode('utf-8')
     return processed_text
 
+def write_dict(output_dict,filename):
+    mode = 'ab' if os.path.exists(filename) else 'wb'
+    with open(filename,mode) as f:
+        for v in output_dict.values():
+            f.write(v)
+
 def end(stream,output):
     stream.disconnect()
-    output.close()
-    print(f'Saved to {output.name}.')
+    try:
+        name = output.name
+        output.close()
+    except:
+        name = '../data/'+dt.now().strftime("%d_%m_%y")+'.txt'
+        write_dict(output,name)
+    print(f'Saved to {name}.')
 
 
 class Listener(tweepy.StreamListener):
-    def __init__(self, output_file=sys.stdout):
+    def __init__(self, output=sys.stdout):
         super(Listener,self).__init__()
-        self.output_file = output_file
+        self.output = output
 
     def on_status(self, status):
         if not status.retweeted and 'RT @' not in status.text and not status.truncated and len(status.text)>50 and 'automatically checked' not in status.text :
@@ -54,24 +70,51 @@ class Listener(tweepy.StreamListener):
                 text = status.text
             tweet = process(text)
             if len(tweet)>50:
-                self.output_file.write(tweet)
+                if isinstance(self.output,BufferedWriter):
+                    self.output.write(tweet)
+                else:
+                    self.output[status.id] = tweet
 
 if __name__=='__main__':
     auth = get_auth('../keys/keys.txt')
     api = get_api(auth)
-    output = open('../data/'+dt.now().strftime("%d_%m_%y")+'.txt','wb')
-    stream = tweepy.Stream(auth=api.auth, listener=Listener(output))
 
-    try:
-        print('Start streaming... ', end='')
-        stream.filter(track=['i','you','me','us','they','we','he','she','the','it','this','that'],languages=['en'], is_async=True)
-        # stream.sample(languages=['en'])
+    # write to file, not dictionary
+    # filename = '../data/'+dt.now().strftime("%d_%m_%y")+'.txt'
+    # mode = 'ab' if os.path.exists(filename) else 'wb'
+    # output = open(filename,mode)
+
+    output = dict()
+
+    iters = sys.argv[1] if len(sys.argv)==2 else 5
+
+    # using filter, not stream
+    # will have to multiple connections as Stream.filter just returns 1 result set
+    for _ in range(iters):
         try:
-            time.sleep(sys.argv[1])
+            listener = Listener(output)
+            stream = tweepy.Stream(auth=api.auth, listener=listener)
+            print('Start streaming... ', end='')
+            stream.filter(track=['i','you','me','us','they','we','he','she','the','it','this','that'],languages=['en'], is_async=True)
+            time.sleep(3)
+            raise Exception
         except:
-            time.sleep(5)
-        raise KeyboardInterrupt
-    except KeyboardInterrupt:
-        print('Stopped! ', end='')
-    finally:
-        end(stream,output)
+            print('Stopped!')
+        finally:
+            stream.disconnect()
+
+    end(stream,listener.output)
+
+    # constant streaming
+    # try:
+    #     print('Start streaming... ', end='')
+    #     stream.sample(languages=['en'], is_async=True)
+    #     try:
+    #         time.sleep(sys.argv[1])
+    #     except:
+    #         time.sleep(5)
+    #     raise KeyboardInterrupt
+    # except KeyboardInterrupt:
+    #     print('Stopped! ', end='')
+    # finally:
+    #     end(stream,listener.output)
