@@ -4,6 +4,7 @@ import preprocessor as p
 from datetime import datetime as dt
 import sys
 import re
+import time
 
 p.set_options(p.OPT.SMILEY)
 
@@ -34,6 +35,12 @@ def process(text):
     processed_text = processed_text.encode('utf-8')
     return processed_text
 
+def end(stream,output):
+    stream.disconnect()
+    output.close()
+    print(f'Saved to {output.name}.')
+
+
 class Listener(tweepy.StreamListener):
     def __init__(self, output_file=sys.stdout):
         super(Listener,self).__init__()
@@ -57,10 +64,14 @@ if __name__=='__main__':
 
     try:
         print('Start streaming... ', end='')
-        stream.filter(track=['i','you','me','we','our','he','she','why','when','how','who'],languages=['en'])
-    except KeyboardInterrupt as e:
-        print('Stopped!')
+        stream.filter(track=['i','you','me','us','they','we','he','she','the','it','this','that'],languages=['en'], is_async=True)
+        # stream.sample(languages=['en'])
+        try:
+            time.sleep(sys.argv[1])
+        except:
+            time.sleep(5)
+        raise KeyboardInterrupt
+    except KeyboardInterrupt:
+        print('Stopped! ', end='')
     finally:
-        print('Done!')
-        stream.disconnect()
-        output.close()
+        end(stream,output)

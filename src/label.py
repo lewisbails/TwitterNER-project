@@ -1,6 +1,7 @@
 import spacy
 import pandas as pd
 import re
+import sys
 from datetime import datetime as dt
 from spacy.tokenizer import _get_regex_pattern
 
@@ -10,6 +11,17 @@ def load(filename):
     tweets = pd.DataFrame.from_records(tweets_str,columns=['raw'])
     return tweets
 
+def tag(token):
+    # predifined entities
+    entities = ['PERSON','NORP','ORG','GPE','LOC']
+
+    if token.ent_type_ and token.ent_type_ in entities and not token.text.startswith('@'):
+        return token.ent_iob_+'-'+token.ent_type_
+    elif token.text.startswith('@'):
+        return 'B-HANDLE'
+    else:
+        return 'O'
+
 def label(texts):
     tweets = pd.DataFrame(columns=['tweet'])
 
@@ -17,27 +29,31 @@ def label(texts):
     nlp = spacy.load('en_core_web_md')
     nlp.add_pipe(nlp.create_pipe('sentencizer'), before='parser')
     re_token_match = _get_regex_pattern(nlp.Defaults.token_match)
-    re_token_match = f"({re_token_match}|#\w+|\w+-\w+)"
+    # re_token_match = f"({re_token_match}|#\w+|\w+-\w+)"
+    re_token_match = f"({re_token_match}|\w+-\w+)"
     nlp.tokenizer.token_match = re.compile(re_token_match).match
+
+    
 
     docs = nlp.pipe(texts,disable=['tagger','textcat'])
     for i,doc in enumerate(docs):
-        tweet_header = '#{}\n#{}\n'.format(i,doc.text)
+        tweet_header = f'#{i}\n#{doc.text}\n'
         sentences = []
         for j,sent in enumerate(doc.sents):
-            sentence_header = '#{}\n#{}\n'.format(j,sent.text)
-            sentence_string = '\n'.join(['{}\t{}\t{}'.format(i+1,token.text,token.ent_iob_+'-'+token.ent_type_ if token.ent_type_ else 'O') for i,token in enumerate(sent)])
+            sentence_header = f'#{j}\n#{sent.text}\n'
+            sentence_string = '\n'.join([f'{token.text}\t{tag(token)}' for token in sent])
             sentences.append(sentence_header+sentence_string)
         tweet = '\n\n'.join(sentences)
         tweets = tweets.append({'tweet':tweet_header+tweet+'\n'},ignore_index=True)
 
-    return tweets
+    return tweets,nlp.pipe(texts,disable=['tagger','textcat'])
 
 def write(tweets,filename='../data/'+dt.now().strftime("%d_%m_%y")+'_labelled.txt'):
     try:
         with open(filename,'wb') as f:
             for _,tweet in tweets.items():
                 f.write((tweet+'\n').encode('utf-8'))
+        print(f'Saved to {filename}')
         return True
     except Exception as e:
         print(e)
@@ -45,6 +61,14 @@ def write(tweets,filename='../data/'+dt.now().strftime("%d_%m_%y")+'_labelled.tx
     
 
 if __name__=='__main__':
-    tweets = load('../data/16_10_19.txt')
-    labelled_tweets = label(tweets['raw'])
+
+    assert len(sys.argv) == 2, '1 argument accepted.'
+
+    tweets = load(sys.argv[1])
+    labelled_tweets,_ = label(tweets['raw'])
     write(labelled_tweets['tweet'])
+
+    # from collections import Counter
+    # flat = [token.text for doc in docs for token in doc]
+    # counts = Counter(flat)
+    # print(counts.most_common(5))
