@@ -86,22 +86,29 @@ if __name__=='__main__':
 
     output = dict()
 
-    iters = sys.argv[1] if len(sys.argv)==2 else 5
+    iters = sys.argv[1] if len(sys.argv)==2 else 1
+
+    tracks = {}
+    with open('../data/tracks.txt','r') as f:
+        for line in f:
+            entity_tracks = line.rstrip('\n').split(' ')
+            tracks[entity_tracks[0]] = entity_tracks[1:]
 
     # using filter, not stream
     # will have to multiple connections as Stream.filter just returns 1 result set
     for _ in range(iters):
-        try:
-            listener = Listener(output)
-            stream = tweepy.Stream(auth=api.auth, listener=listener)
-            print('Start streaming... ', end='')
-            stream.filter(track=['i','you','me','us','they','we','he','she','the','it','this','that'],languages=['en'], is_async=True)
-            time.sleep(3)
-            raise Exception
-        except:
-            print('Stopped!')
-        finally:
-            stream.disconnect()
+        for e_type,track in tracks.items():
+            try:
+                listener = Listener(output)
+                stream = tweepy.Stream(auth=api.auth, listener=listener)
+                print('Start streaming... ', end='')
+                stream.filter(track=track,languages=['en'], is_async=True)
+                time.sleep(3)
+                raise Exception
+            except:
+                print('Stopped!')
+            finally:
+                stream.disconnect()
 
     end(stream,listener.output)
 
