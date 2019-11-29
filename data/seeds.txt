@@ -1,0 +1,7 @@
+ORG1 alphabet
+ORG2 apple
+ORG3 amazon
+ORG4 mcdonalds
+ORG5 emirates
+ORG6 uber
+ORG7 fifa
