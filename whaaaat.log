@@ -1,0 +1,15 @@
+INFO:root:Imports successful.
+INFO:root:Frames loaded from file.
+INFO:root:Tag conversion successful. Tags: ['O', 'B-LOC', 'I-LOC', 'B-MISC', 'I-MISC', 'B-ORG', 'I-ORG', 'B-PER', 'I-PER']
+INFO:root:Testing tweets ready. Tags: ['O', 'B-LOC', 'I-LOC', 'B-MISC', 'I-MISC', 'B-ORG', 'I-ORG', 'B-PER', 'I-PER']
+INFO:root:Getting sentences from multi-index dataframes...
+INFO:root:Loaded pre-trained model ./models/crf_25_11_19_conll.pickle.
+INFO:root:c1:0.0798, c2:0.0523
+INFO:root:crf_25_11_19_conll flat F1 score: 0.34015030242044975
+INFO:root:Loaded pre-trained model ./models/crf_25_11_19_wnut.pickle.
+INFO:root:c1:0.019877889915629585, c2:0.005732039148371734
+INFO:root:crf_25_11_19_wnut flat F1 score: 0.36527078595825585
+INFO:root:Loaded pre-trained model ./models/crf_27_11_19_mixed.pickle.
+INFO:root:c1:0.0656, c2:0.025
+INFO:root:crf_27_11_19_mixed flat F1 score: 0.4582198317883393
+INFO:root:Feature importances for ./models/crf_25_11_19_conll.pickle

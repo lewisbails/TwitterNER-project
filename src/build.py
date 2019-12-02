@@ -11,15 +11,6 @@ columns = ['pos', 'dep', 'lemma', 'norm', 'lower', 'shape', 'is_alpha', 'is_asci
            'is_upper', 'is_title', 'is_punct', 'like_num', 'is_oov', 'is_stop', 'cluster', 'like_url', 'is_currency']
 
 
-def json_to_dict(filename):
-    '''Get dict of sentences from json1 returned from doccano'''
-
-    with open(filename, 'r', encoding='utf-8') as f:
-        sents = {i: json.loads(line) for i, line in enumerate(f)}
-
-    return sents
-
-
 def get_features(token, attributes):
     features = []
     for att in attributes:
@@ -62,44 +53,18 @@ def to_df(filename, delim, sep):
     return df
 
 
-def json1_to_df(filename):
-    '''for the test set which only has tag'''
-
-    data = json_to_dict(filename)
-
-    xy = []
-
-    for _, datum in data.items():
-        text = datum['text']
-        labels = sorted(datum['labels'], key=lambda x: x[0])
-        xi = [text[start:finish] for start, finish, _ in labels]
-        yi = [tag for _, _, tag in labels]
-        xy.append([xi, yi])
-
-    df = pd.DataFrame.from_records(xy, columns=['tokens', 'labels'])
-    return df
-
-
 if __name__ == '__main__':
     '''
-    type filename csvname
+    filename csvname delimiter separator
     '''
 
-    assert len(sys.argv) >= 2, 'at least 1 argument accepted.'
+    filename = sys.argv[1]
+    output = sys.argv[2]
+    delim = sys.argv[3]
+    sep = sys.argv[4]
 
-    if 'json' in sys.argv[1]:
-        df = json1_to_df(sys.argv[2])
-    elif 'doccano_conll' in sys.argv[1]:
-        df = to_df(sys.argv[2], '\t', '')
-    elif 'conll' in sys.argv[1]:
-        df = to_df(sys.argv[2], ' ', '')
-    elif 'wnut' in sys.argv[1]:
-        df = to_df(sys.argv[2], '\t', '\t')
-    elif 'doccano' in sys.argv[1]:
-        df = to_df(sys.argv[2], '\t', '')
-    else:
-        raise Exception(f'Unable to handle type {sys.argv[1]}')
+    df = to_df(filename, delim, sep)
 
     print(df.head(20))
 
-    df.to_csv(sys.argv[3], index=False)
+    df.to_csv(output, index=False)
