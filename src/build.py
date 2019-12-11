@@ -55,7 +55,9 @@ def to_df(filename, delim, sep):
 
 if __name__ == '__main__':
     '''
-    filename csvname delimiter separator
+    sys.argv[1:] : filename csvname delimiter separator
+
+    Turns conll format to csv
     '''
 
     filename = sys.argv[1]

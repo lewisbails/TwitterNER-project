@@ -10,8 +10,14 @@ import json
 from io import BufferedWriter
 import configparser
 
+'''
+    For scraping tweets. Call with STREAM or FILTER (if you want to seed the results)
+'''
+
 
 def get_auth(key_path):
+    ''' get authorisation handler '''
+
     with open(key_path, 'r') as f:
         consumer_key = f.readline().rstrip()
         consumer_secret = f.readline().rstrip()
@@ -25,12 +31,16 @@ def get_auth(key_path):
 
 
 def get_api(auth):
+    ''' get API handler '''
+
     api = tweepy.API(auth, wait_on_rate_limit=True,
                      wait_on_rate_limit_notify=True)
     return api
 
 
 def process(text):
+    ''' fix some of the things that will cause issues when tokenising later '''
+
     processed_text = text.replace("&amp;", "and").replace(
         "&gt;", ">").replace("&lt;", "<").replace('…', '').strip(' :-*^,+|_')
 
@@ -58,6 +68,9 @@ class Listener(tweepy.StreamListener):
         self.output = output
 
     def on_status(self, status):
+        ''' every time we read a tweet '''
+
+        # no retweets, truncated tweets, excessively short tweets.
         if not status.retweeted and not status.truncated and len(status.text) > 50 and not any(x in status.text for x in ['RT @', 'automatically checked', '... More for ']):
             try:
                 text = status.full_text
@@ -71,6 +84,8 @@ class Listener(tweepy.StreamListener):
                     self.output[status.id] = tweet
 
     def on_end(self):
+        ''' stream has eneded, write to file '''
+
         try:
             name = output.name
             self.output.close()

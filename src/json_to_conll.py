@@ -5,6 +5,11 @@ from datetime import datetime as dt
 import os
 
 
+'''
+    Doccano only returns json format, but we want to work with conll format. That's where this script comes in.
+'''
+
+
 def load(filename):
     ''' load json returned from doccano, one row per entry '''
 

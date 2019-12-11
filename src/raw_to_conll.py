@@ -6,6 +6,10 @@ from datetime import datetime as dt
 from spacy.tokenizer import _get_regex_pattern
 import os
 
+'''
+    Turns scraped tweets into conll format for uploading to doccano (or any other) annotation tool.
+'''
+
 
 def load(filename):
     ''' get series of raw tweets '''
@@ -69,6 +73,8 @@ if __name__ == '__main__':
     docs = get_docs(tweets)
     labelled_tweets = to_conll(docs)
     write(labelled_tweets)
+
+    # code below is only used for report plots
 
     # from collections import Counter
     # import matplotlib.pyplot as plt
