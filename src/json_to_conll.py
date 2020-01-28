@@ -11,7 +11,17 @@ import os
 
 
 def load(filename):
-    ''' load json returned from doccano, one row per entry '''
+    ''' load json returned from doccano, one row per entry
+    Parameters
+    ----------
+    filename: str
+    
+    Return
+    ------
+    tweets: dict
+        Dict of dicts keyed by index
+    
+    '''
 
     with open(filename, 'r', encoding='utf-8') as f:
         tweets = {i: json.loads(line) for i, line in enumerate(f)}
@@ -22,6 +32,16 @@ def label(items):
     '''Takes dict of dicts and returns series of strings
     in conll format, ready to be written
     Note: \# is changed back to # (so if you load it into doccano again it will disappear)
+    
+    Parameters
+    ----------
+    items: dict
+    
+    Returns
+    -------
+    Series
+        of Tweet strings in conll format
+    
     '''
 
     tweets = []
@@ -37,7 +57,21 @@ def label(items):
 
 
 def write(tweets, filename='../data/' + dt.now().strftime("%d_%m_%y") + '_doccano_labelled.txt'):
-    ''' take strings in conll format and save them to file '''
+    ''' take strings in conll format and save them to file
+    
+    Parameters
+    ----------
+    tweets: Series
+        Series of tweet strings in conll format
+    filename: str
+        Where to save the conll formatted text file
+        
+    Returns
+    -------
+    bool
+        True if success, else false
+    
+    '''
 
     mode = 'ab' if os.path.exists(filename) else 'wb'
     try:
