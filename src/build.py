@@ -4,7 +4,7 @@ import sys
 import spacy
 from spacy.tokens import Doc
 
-''' For turning CONLL-2003 data to a CSVs with a multitude of columms'''
+''' For turning CONLL-2003 data to a CSVs with a multitude of columms (for training models)'''
 
 
 columns = ['pos', 'dep', 'lemma', 'norm', 'lower', 'shape', 'is_alpha', 'is_ascii', 'is_digit', 'is_lower',
@@ -12,6 +12,22 @@ columns = ['pos', 'dep', 'lemma', 'norm', 'lower', 'shape', 'is_alpha', 'is_asci
 
 
 def get_features(token, attributes):
+    '''extract attributes from spaCy Token object
+    
+    Parameters
+    ----------
+    token: Token
+        spaCy token object
+    attributes: list
+        Attributes to extract from Token
+        
+    Returns
+    -------
+    features: list
+        List of requested attributes from Token object
+    
+    '''
+           
     features = []
     for att in attributes:
         try:
@@ -23,15 +39,35 @@ def get_features(token, attributes):
 
 
 def to_df(filename, delim, sep):
+    '''turn conll formatted file to pandas DataFrame
+    
+    Parameters
+    ----------
+    filename: str
+        ConLL filename to be converted
+    delim: str
+        delimiter for each line
+    sep: str
+        line separator in file
+        
+    Returns
+    -------
+    df: DataFrame
+        Dataframe where each row contains features for one token.
+    
+    '''
+
     sent_id = 0
     sent = []
     tags = []
     rows = []
 
+    # get the english model and override the tokenizer
     nlp = spacy.load('en_core_web_lg')
     nlp.tokenizer = lambda X: Doc(nlp.vocab, words=X)
 
     with open(filename, 'r', encoding='utf-8') as f:
+        # for each line in conll file, create a row for the dataframe
         for line in f:
             line = line.rstrip('\n' + sep)
             if line:
